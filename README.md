@@ -13,9 +13,9 @@ Just a place to gather a list of topics to review for technical interviews. Feel
 * Greedy Algorithms (?)
 * Recursion
 
-### 4 Principles of Object-Oriented Programming
+## 4 Principles of Object-Oriented Programming
 
-Check out this [CodeBetter.com link]:http://codebetter.com/raymondlewallen/2005/07/19/4-major-principles-of-object-oriented-programming/
+Check out this [CodeBetter.com link](http://codebetter.com/raymondlewallen/2005/07/19/4-major-principles-of-object-oriented-programming/)
 
 #### Encapsulation
 Access to data within classes should be restricted to accessors (get) and mutators (set).
