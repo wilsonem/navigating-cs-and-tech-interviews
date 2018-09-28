@@ -2,7 +2,7 @@
 Just a place to gather a list of topics to review for technical interviews. Feel free to contribute ideas if I'm missing anything!
 
 * [4 Principles of Object-Oriented Programming](#4-Principles-of-Object-Oriented-Programming)
-* Java Keywords
+* [Java Keywords](#java-keywords)
 * Stacks and Queues
 * Arrays
 * LinkedLists
@@ -64,7 +64,7 @@ public class Person {
 #### Inheritance
 
 
-### Java Keywords
+## Java Keywords
 * Static
   * If a method is dependent on an instance variable in the class, do not make it a static method.
   * Static methods belong to the class, while non-static methods belong to objects in the class.
