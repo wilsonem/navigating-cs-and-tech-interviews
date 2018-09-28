@@ -1,7 +1,7 @@
 # Technical Interview Topics
 Just a place to gather a list of topics to review for technical interviews. Feel free to contribute ideas if I'm missing anything!
 
-* [4 Principles of Object-Oriented Programming](#principles-of-object-oriented-programming)
+* [4 Principles of Object Oriented Programming](#principles-of-object-oriented-programming)
 * [Java Keywords](#java-keywords)
 * Stacks and Queues
 * Arrays
@@ -61,7 +61,9 @@ public class Person {
 
 ### Polymorphism
 
+
 ### Inheritance
+Think of having a base class. For example, all birds have feathers, a beak, and lay eggs. However some live in different locations, and some have the ability to swim or sing.
 
 
 ## Java Keywords
