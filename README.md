@@ -34,8 +34,20 @@ Let's be honest, computer science and technical interviews are hard. I'm just a 
 * Language Notes
   * Java
     * [Java Keywords](#java-keywords)
+  * Javascript
+  * HTML/CSS
   * C/C++
   * Python
+  * PHP
+  * 
+* Other
+  * What are APIs?
+  * How to actually host websites
+  * Database Notes
+  * What are libraries?
+  * Asynchronous Programming
+  * Server side vs. Client Side
+  
 
 
 # Data Structures
