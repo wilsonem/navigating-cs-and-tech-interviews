@@ -1,4 +1,4 @@
-# Technical Interview Topics
+# Navigating CS and Preparing for Technical Interviews
 
 Let's be honest, computer science and technical interviews are hard. I'm just a girl trying to create a place to gather a list of topics to review to prep for those interviews and navigate the field of CS as a whole. Feel free to contribute ideas if I'm missing anything! (and I absolutely have)
 
