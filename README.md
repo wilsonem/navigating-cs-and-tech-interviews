@@ -2,89 +2,52 @@
 
 Let's be honest, computer science and technical interviews are hard. I'm just a girl trying to create a place to gather a list of topics to review to prep for those interviews and navigate the field of CS as a whole. Feel free to contribute ideas if I'm missing anything! (and I absolutely have)
 
-* [4 Principles of Object Oriented Programming](#principles-of-object-oriented-programming)
-* [Java Keywords](#java-keywords)
-* Run Time Analysis
+#### The following is what I hope to (eventually) include in this guide
+*Note: items with an * indicate they are good to know for interview purposes - some things I've included just for my own clarity and not for interview prep
+
 * [Data Structures](#data-structures)
-  * [Arrays](#arrays)
-  * [Hash Tables, HashSets, and HashMaps](#hash-tables-hashsets-and-hashmaps)
-  * Stacks and Queues
-  * Lists, LinkedLists, and ArrayLists
-  * Graphs
-  * Binary Search Trees
-* Sorting
-* Greedy Algorithms (?)
-* Recursion
-* DFS and BFS
-* Different Coding Languages
-
-## Principles of Object Oriented Programming
-
-Check out this [CodeBetter.com link](http://codebetter.com/raymondlewallen/2005/07/19/4-major-principles-of-object-oriented-programming/)
-
-### Encapsulation
-Access to data within classes should be restricted to accessors (get) and mutators (set).
-```
-public class Person {
-  private String firstName;
-  
-  public String getFirstName() {
-    return this.firstName();
-  }
-  
-  public void setFirstName(String name) {
-    this.firstName = name;
-  }
-}
-```
-
-### Data Abstraction
-Abstraction is breaking down complex systems into simpler pieces. Think of describing the general population by 1 person.
-Each person has a name, height, age, and can do tasks like walking and eating.
-```
-public class Person {
-  private String name;
-  private int age;
-  private double height;
-  private boolean canRead;
-  
-  public String getName() {
-    return this.name;
-  }
-  
-  public void setName(String newName) {
-    this.name = newName;
-  }
-  
-  // ...
-  
-  public static void walk() {
-    // code that makes the person walk
-  }
-```
-
-### Polymorphism
+  * [Run Time Analysis Overview](#run-time-analysis)*
+  * [Arrays](#arrays)*
+  * [Hash Tables, HashSets, and HashMaps](#hash-tables-hashsets-and-hashmaps)*
+  * Stacks and Queues*
+  * Lists, LinkedLists, and ArrayLists*
+  * Graphs*
+  * Trees
+    * Binary Heap*
+    * Binary Search Trees*
+    * Red-Black Trees
+    * AVL Trees
+    * B and B+ Trees
+* Recursion*
+* Sorting Methods
+  * Linear Sort*
+  * Bubble Sort
+  * Merge Sort*
+* Search Methods
+  * Linear Search*
+  * Binary Search*
+  * Depth-First Search (DFS) and Breadth-First Search (BFS)*
+* Algorithms and Analysis
+  * Greedy Algorithms
+  * Dynamic Programming
+* [4 Principles of Object Oriented Programming](#principles-of-object-oriented-programming)*
+* Language Notes
+  * Java
+    * [Java Keywords](#java-keywords)
+  * C/C++
+  * Python
 
 
-### Inheritance
-Think of having a base class. For example, all birds have feathers, a beak, and lay eggs. However some live in different locations, and some have the ability to swim or sing.
-
-
-## Java Keywords
-### Static
-* If a method is dependent on an instance variable in the class, do not make it a static method.
-* Static methods belong to the class, while non-static methods belong to objects in the class.
-* Getters and setters are not static because they rely on instance variables, while a method that just prints out "hello, world" would be static.
-  
-  
-## Data Structures
+# Data Structures
 Data structures provide ways to help organize stored information. Each has pros and cons, and which you should use depends on the functions that you need.
 
 Big things to consider are the times required for accessing, searching for, inserting, and deleting data from a structure.
 
 **Note: If you have any good videos that really helped you understand how a data structure works, add it or let me know and I'll put it on here!**
 
-### Arrays
+## Run Time Analysis Overview
+
+## Arrays
 
 ```
 // Empty int array
@@ -112,7 +75,7 @@ A linear data structure, arrays are created with a fixed length. Information is 
 
 I personally like to think of arrays like a row of cubbies. If you know where something is, you just reach in and grab it, otherwise you must look through each one. To "delete" or "add" a cubby, you have to find a new row of cubbies of the right size, and move everything over, again going through each cubby once.
 
-### Hash Tables, HashSets, and HashMaps
+## Hash Tables, HashSets, and HashMaps
 HashSets and HashMaps are great tools for technical interviews! However, it's important to understand the difference between the two before using them. For some quick background, HashSets and HashMaps rely on hashing functions, which essentially assigns an integer "key" to each input, which is calculated based on the input itself. The key is then used to place the item in a slot of a table corresponding to the key
 
 If different items somehow recieve the same "key" a collision will occur because both objects will be put in the same spot - there are 2 main ways to handle this:
@@ -130,7 +93,7 @@ But that isn't as important for technical interviews. HashSets and HashMaps are 
 | Insert   | O(1)       | O(n)              | Same idea as search, can generate a hash for the item and place it in the corresponding spot. |
 | Delete   | O(1)       | O(n)              | Same idea as search and insert. |
    
-#### HashSets
+### HashSets
 HashSets can only store unique items. If you try to add a duplicate, the add method will return `false`. It's good for holding a collection of items and for checking if you already have something in your collection or not.
 
 ```
@@ -153,7 +116,7 @@ boolean removedTwo = myHashSet.remove(2);        // removedTwo = true
 boolean removedTwoAgain = myHashSet.remove(2);   // removedTwoAgain = false, it didn't exist in our set to remove
 ```
 
-#### HashMaps
+### HashMaps
 HashMaps, unlike HashSets, rely on **Key-Value Pairs**. For a typical HashMap, duplicate values can be stored as long as they have unique keys attached to them. However, if you tried to add a key-value pair when the key already exists in the map, it would overwrite the key-value pair at that spot.
 
 It's very easy to check if a HashMap contains a specific key, though much more difficult to check if a specific value exists within a map. If you'll be frequently looking for certain values, you'll want to store those values as keys - if that doesn't work well for you, you may need to consider a different data structure.
@@ -177,3 +140,94 @@ boolean removed = myHashMap.remove(2);   // removed = true
 
 // other functions include size(), keySet(), replace(key, val), etc
 ```
+
+## Stacks and Queues
+
+## Lists
+
+## Graphs
+
+## Trees
+
+# Recursion
+
+# Sorting Methods
+
+## Linear Sort
+
+## Bubble Sort
+
+## Merge Sort
+
+# Search Methods
+
+## Linear Search
+
+## Binary Search
+
+## Depth-First Search and Breadth-First Search
+
+# Algorithms and Analysis
+
+## Greedy Algorithms
+
+## Dynamic Programming
+
+# Principles of Object Oriented Programming
+
+Check out this [CodeBetter.com link](http://codebetter.com/raymondlewallen/2005/07/19/4-major-principles-of-object-oriented-programming/)
+
+## 1. Encapsulation
+Access to data within classes should be restricted to accessors (get) and mutators (set).
+```
+public class Person {
+  private String firstName;
+  
+  public String getFirstName() {
+    return this.firstName();
+  }
+  
+  public void setFirstName(String name) {
+    this.firstName = name;
+  }
+}
+```
+
+## 2. Data Abstraction
+Abstraction is breaking down complex systems into simpler pieces. Think of describing the general population by 1 person.
+Each person has a name, height, age, and can do tasks like walking and eating.
+```
+public class Person {
+  private String name;
+  private int age;
+  private double height;
+  private boolean canRead;
+  
+  public String getName() {
+    return this.name;
+  }
+  
+  public void setName(String newName) {
+    this.name = newName;
+  }
+  
+  // ...
+  
+  public static void walk() {
+    // code that makes the person walk
+  }
+```
+
+## 3. Polymorphism
+
+
+## 4. Inheritance
+Think of having a base class. For example, all birds have feathers, a beak, and lay eggs. However some live in different locations, and some have the ability to swim or sing.
+
+
+# Java Keywords
+### Static
+* If a method is dependent on an instance variable in the class, do not make it a static method.
+* Static methods belong to the class, while non-static methods belong to objects in the class.
+* Getters and setters are not static because they rely on instance variables, while a method that just prints out "hello, world" would be static.
+ 
